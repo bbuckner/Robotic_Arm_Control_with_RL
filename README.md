@@ -42,20 +42,19 @@ Linear 1 Neuron<br>
 Output (1 State-Action Pair Value)<br>
 
 # Hyperparameters:
-There is a single learning agent that collects data from 20 separate instances of the robotic arm all interacting at the same time.<br>
-In this way data can be gathered quicker and the agent will learn faster.<br>
+There is a single learning agent that collects data from 20 separate instances of the robotic arm all interacting at the same time. In this way data can be gathered quicker and the agent will learn faster.<br>
 Replay Buffer Size = 100,000<br>
 Batch Size = 128<br>
 Timesteps between Learning Sessions = 4<br>
 Batch Samples per Learning Session = 1<br>
-Gamma ($\gamma$) = 0.99<br>
-Tau ($\tau$) = 0.001<br>
+Gamma = 0.99<br>
+Tau = 0.001<br>
 Actor Learning Rate = 0.005<br>
 Critic Learning Rate = 0.0005<br>
 L2 Weight Decay = 0<br>
-OU Noise Mean ($\mu$) = 0<br>
-OU Noise Theta ($\theta$) = 0.15<br>
-OU Noise Standard Deviation ($\sigma$) = 0.2<br>
+OU Noise Mean = 0<br>
+OU Noise Theta = 0.15<br>
+OU Noise Standard Deviation = 0.2<br>
 Non-Last Neural Network Hidden Layer Initialization = uniform between -1/sqrt(layer_size) and 1/sqrt(layer_size)
 Last Hidden Layer Initialization = uniform between -0.003 and 0.003
 
